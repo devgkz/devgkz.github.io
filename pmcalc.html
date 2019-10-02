@@ -1,0 +1,39 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Расчет пресс-массы</title>
+<style>
+  body, textarea, input {font: normal 15px Arial, sans-serif;}
+  input, textarea {box-sizing:border-box; -moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+  hr {margin:8px 0;border:0;border-top:1px dashed #333;} 
+  small {font-size:0.8em;color:#555}
+  @media only screen and (min-width: 240px) {
+    body, textarea, input {font-size: 17px;}	
+  }
+</style>
+<script language="JavaScript">
+  function go(){
+    m1=document.getElementById('m').value;
+    w1=document.getElementById('w').value;
+    mw=m1*w1/(100-w1);
+    document.getElementById('r1').innerHTML = 
+      '<b>М. раствора ПВС - '+Math.round(mw*0.7)+' г<br/>'+
+      'М. глицерина - '+Math.round(mw*0.3)+' г<br/>'+
+      'Итого связки - '+(Math.round(mw*0.7)+Math.round(mw*0.3))+' г</b>';
+  }
+</script>
+</head>
+<body bgcolor="DEEBF9">
+<p align="center"><b>Расчет пресс-массы</b><br><small>для изделий из технической керамики</small></p>
+<hr>
+<input id="m" size="5" type="text"/> &larr; масса порошка,&nbsp;г<br/>
+<input id="w" size="5" type="text"/> &larr; cодержание связки,&nbsp;%<br/><br/>
+<input type="button" onclick="go()" value="Рассчитать состав"/>
+
+<p id="r1">&nbsp;</p>
+<hr>
+<div><small>© 2006&ndash;2009 devg (bit55.ru)</small></div>
+</body>
+</html>
