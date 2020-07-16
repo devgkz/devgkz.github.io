@@ -1,0 +1,121 @@
+/*! Utilities */
+
+// Clearfix
+.hidden { display:none !important;}
+.clearfix:before, .clearfix:after { content:""; display:table; }
+.clearfix:after { clear:both; }
+
+// Text selection
+::selection {
+  background-color: #ffd500;
+  color: #000000;
+  text-shadow: none;
+}
+
+
+
+/*! Spacing */
+@each $prop, $abbrev in (margin: m, padding: p) {
+  @each $size, $lengths in $spacers {
+    $length-x: map-get($lengths, x);
+    $length-y: map-get($lengths, y);
+
+    .#{$abbrev}-#{$size}  { #{$prop}:        $length-y $length-x !important; }
+    .#{$abbrev}t-#{$size} { #{$prop}-top:    $length-y !important; }
+    .#{$abbrev}r-#{$size} { #{$prop}-right:  $length-x !important; }
+    .#{$abbrev}b-#{$size} { #{$prop}-bottom: $length-y !important; }
+    .#{$abbrev}l-#{$size} { #{$prop}-left:   $length-x !important; }
+    .#{$abbrev}x-#{$size} {
+      #{$prop}-right: $length-x !important;
+      #{$prop}-left:  $length-x !important;
+    }
+    .#{$abbrev}y-#{$size} {
+      #{$prop}-top:    $length-y !important;
+      #{$prop}-bottom: $length-y !important;
+    }
+  }
+}
+
+.float-right {
+  float:right;
+}
+
+/*! Text styling */
+.t-muted {
+  color:#999 !important;
+}
+.t-right {
+  text-align: right !important;
+}
+.t-center {
+  text-align: center !important;
+}
+.t-left {
+  text-align: left !important;
+}
+
+.t-primary {
+    color: $brand-primary !important;
+}
+.t-danger {
+    color: $brand-danger !important;
+}
+.t-warning {
+  color: $brand-warning !important;
+}
+.t-info {
+  color: $brand-info !important;
+}
+.t-success {
+  color: $brand-success !important;
+}
+
+a.t-primary:focus, a.t-primary:hover {
+    color: $brand-primary !important;
+}
+
+a.t-danger:focus, a.t-danger:hover {
+    color:$brand-danger !important;
+}
+
+/*! Sizing */
+.w-120 {
+  width: 240px;
+  flex: none;
+}
+.w-240 {
+  width: 240px;
+  flex: none;
+}
+
+/*! Animations */
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes slide-down {
+  0% {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-up {
+  0% {
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

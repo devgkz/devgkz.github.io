@@ -1,0 +1,35 @@
+/*!
+ * LCSS - ligthing fast UI-design framework (http://github.com/yenior/lcss).
+ * Copyright 2020 Eugene Dementyev. 
+ * Licensed under the MIT License.
+ */
+
+// Core variables and mixins
+@import "variables";
+@import "mixins";
+
+// Reset & Typo
+@import "sanitize";
+
+// Flex grid system
+@import "grid";
+
+@import "layout";
+@import "typography";
+
+
+// Components
+@import "badges";
+@import "btn";
+@import "inputs";
+@import "alerts";
+@import "tooltip";
+@import "cards";
+
+@import "utils";
+@import "icons";
+
+
+// Custom styles
+//@import "custom";
+
