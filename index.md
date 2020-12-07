@@ -8,11 +8,13 @@ layout: default
 ## Резюме
 - Коммерческая разработка программного обеспечения c 2008 года.
 - Проектирование, поддержка и оптимизация высоконагруженных систем.
+- Создание прототипов систем, MVP.
+- Репетиторская работа для начинающих программистов.
 
 ## Основные технологии
-- `Java`, `Kotlin`, `Spring Boot`
-- `Python/Django`, `Laravel` 
-- `Ansible`, `Git`, `Docker`
+- Backend: **Java**, **Spring Boot**, **Vert.x** 
+- MVP: **Python/Django** 
+- CI/CD: **Docker**, **Jenkins**, **Ansible** 
 
 
 ## Проекты
