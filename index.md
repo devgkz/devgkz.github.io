@@ -22,8 +22,8 @@ layout: default
 > **Отофлот. Система бронирования автомобилей для таксопарков**  
 > [otoflot.com](https://otoflot.com/)
 
-> **Мастер тут! Служба мастеров Казахстана**  
-> [mastertut.kz](https://mastertut.kz/)
+> **MeisterPlace. Местный каталог услуг**  
+> [meister.place](https://meister.place/)
 
 > **Cайт объявлений Астаны (Нур-Султана)**  
 > [astana.tk](https://astana.tk/)
